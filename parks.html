@@ -1,0 +1,144 @@
+<html>
+<head>
+  <title>Forest Hills-Parks</title>
+    <script src="neighborhood1.js"></script>
+    <link rel="stylesheet" href="neighborhood1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+</head>
+<body onLoad= "curPage(7)">
+<div class="main">
+<div class="masthead"><h1>Forest Hills</h1></div>
+<div class="masthead2"><h3>Parks</h3></div>
+<div>
+    <nav class="nav">
+      <input type="checkbox" class="nav-checkbox" id="menu-button"/>
+      <label class="nav-button" for ="menu-button"></label>
+      <div class="nav-content">
+        <ul class="nav-items">
+            <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="96" height="96"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M86,15.0472l-78.83333,70.9528h21.5v64.5h43v-50.16667h28.66667v50.16667h43v-64.5h21.5z"></path></g></g></svg>
+                <span class="nav-item-text"  onClick="changeFunc(1)">
+                  Home
+                </span>
+              </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="96" height="96"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M35.83333,21.5v14.33333h14.33333v24.46745l25.69922,25.69922l-25.69922,25.69922v24.46744h-14.33333v14.33333h14.33333h7.16667h7.16667h43h7.16667h7.16667h14.33333v-14.33333h-14.33333v-24.46744l-25.69922,-25.69922l25.69922,-25.69922v-24.46745h14.33333v-14.33333h-14.33333h-7.16667h-7.16667h-43h-7.16667h-7.16667z"></path></g></g></svg>
+        <span class="nav-item-text"  onClick="changeFunc(2)">
+              History
+            </span>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="96" height="96"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M35.83333,0l-7.16667,50.16667l15.67708,21.5l-1.34375,86c0,7.89453 6.49479,14.33333 13.66146,14.33333c8.5944,0 15.00521,-6.4388 15.00521,-14.33333l-1.34375,-86l15.67708,-21.5l-7.16667,-50.16667h-7.16667v39.41667c0,2.1556 -1.42774,3.58333 -3.58333,3.58333c-2.1556,0 -3.58333,-1.42774 -3.58333,-3.58333c0,-0.72786 -2.91146,-39.41667 -2.91146,-39.41667h-8.51042c0,0 -2.91146,38.68881 -2.91146,39.41667c0,2.1556 -1.42774,3.58333 -3.58333,3.58333c-2.1556,0 -3.58333,-1.42774 -3.58333,-3.58333v-39.41667zM142.66146,0c-7.89453,0 -35.83333,19.3444 -35.83333,43c0,23.6556 14.33333,38.68881 14.33333,46.58333c0,15.76107 -5.73893,40.90039 -7.16667,67.41146c-0.72786,7.89453 5.76693,15.00521 13.66146,15.00521c7.89453,0 14.27735,-6.4388 15.00521,-14.33333z"></path></g></g></svg>
+<span class="nav-item-text"  onClick="changeFunc(3)">
+           Restaurants
+            </span>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="96" height="96"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M163.6365,65.26683c-2.17867,-3.2895 -6.61483,-4.1925 -9.9115,-2.02817l-1.64833,1.118l-16.49767,-38.51367c-1.12517,-2.63733 -3.71233,-4.343 -6.579,-4.343h-84.065c-2.795,0 -5.30333,1.57667 -6.45,4.15667l-18.275,38.915l-1.978,-1.21833c-3.29667,-2.17867 -7.73283,-1.28283 -9.91867,2.01383c-2.1715,3.28233 -1.29,7.70417 1.978,9.89717l4.257,2.78067c-0.07167,0.215 -0.215,0.50167 -0.215,0.78833v64.5c0,3.94167 3.225,7.16667 7.16667,7.16667h7.13083c3.97033,0 7.18817,-3.23217 7.16667,-7.2025l-0.03583,-7.13083h100.47667l-0.03583,7.13083c-0.0215,3.97033 3.19633,7.2025 7.16667,7.2025h7.13083c3.94167,0 7.16667,-3.225 7.16667,-7.16667v-64.5c0,-0.28667 -0.14333,-0.57333 -0.14333,-0.86l4.128,-2.795c3.27517,-2.193 4.16383,-6.622 1.98517,-9.9115zM50.16667,107.5c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667c3.94167,0 7.16667,3.225 7.16667,7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667zM121.83333,107.5c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667c3.94167,0 7.16667,3.225 7.16667,7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667zM32.75167,71.66667l16.77,-35.83333h74.74833l15.33667,35.83333z"></path></g></g></svg>
+            <span class="nav-item-text"  onClick="changeFunc(4)">
+              Transportation
+            </span>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="52" height="52"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M86,0.62019c-21.86178,-0.59435 -42.01803,7.64904 -57.47115,21.29327l-11.99038,-11.99038l-9.92308,43l43,-9.92308l-11.37019,-11.37019c12.37801,-11.16346 29.17488,-18.39904 47.75481,-18.39904c39.69231,0 72.76923,32.40505 72.76923,72.76923l12.61058,12.61058c0.67188,-3.97956 0.62019,-8.01081 0.62019,-11.99038c0,-47.6256 -38.3744,-86 -86,-86zM83.3125,30.80288c-5.11658,0 -10.82753,2.27404 -14.47115,8.88942c-3.97956,6.61538 -5.375,15.2464 -2.06731,22.53365c0,0.67188 -1.24038,-0.62019 -1.24038,2.6875c-0.67187,3.30769 1.36959,7.93329 2.6875,9.92308c0.67188,0.67188 1.8089,1.18871 2.48077,1.86058c0,0 0.7494,6.07272 5.375,11.37019c0.67188,4.6256 -3.30769,6.61538 -3.30769,6.61538c-13.90264,2.63582 -27.08173,10.41406 -27.08173,19.01923v6.61538c0,9.25121 21.08654,11.37019 40.93269,11.37019c19.17428,0 40.3125,-5.42668 40.3125,-11.37019v-6.61538c0,-8.60517 -13.17908,-16.38341 -27.08173,-19.01923c0,0 -5.32331,-1.31791 -2.6875,-6.61538c3.30769,-3.97956 5.375,-9.43209 5.375,-10.75c0,0 5.375,-3.15264 5.375,-9.09615c0,-5.94351 -1.44712,-5.99519 -1.44712,-5.99519c1.98978,-5.94351 2.60997,-29.09735 -12.61058,-26.46154c-0.98197,-2.63581 -5.42668,-4.96154 -10.54327,-4.96154zM0.62019,73.38942c0,4.6256 -0.62019,8.63101 -0.62019,12.61058c0,47.6256 38.3744,86 86,86c22.30108,0 42.04387,-8.70853 57.05769,-22.32692l12.40385,12.40385l9.92308,-43l-43,9.92308l11.37019,11.37019c-12.97235,11.0601 -29.40745,18.39904 -47.75481,18.39904c-39.69231,0 -72.76923,-32.40504 -72.76923,-72.76923z"></path></g></g></svg>
+<span class="nav-item-text"  onClick="changeFunc(6)">
+              Daily life
+            </span>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="52" height="52"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M86,0c-14.60036,0 -24.36839,6.56371 -28.73558,15.09135c-4.36719,8.52765 -4.34135,17.88221 -4.34135,24.60096c-0.02584,2.3774 1.21454,4.59976 3.28185,5.8143c2.06731,1.18871 4.59976,1.18871 6.66706,0c2.06731,-1.21454 3.30769,-3.4369 3.28185,-5.8143c0,-6.51202 0.49099,-13.69591 2.89423,-18.39904c2.40324,-4.70312 5.73678,-8.0625 16.95192,-8.0625c11.13762,0 14.52284,3.46274 16.95192,8.26923c2.42909,4.80649 2.89423,12.01622 2.89423,18.19231c-0.02584,2.3774 1.21454,4.59976 3.28185,5.8143c2.06731,1.18871 4.59976,1.18871 6.66706,0c2.06731,-1.21454 3.30769,-3.4369 3.28185,-5.8143c0,-6.40865 0,-15.60817 -4.34135,-24.1875c-4.34135,-8.57933 -14.08353,-15.50481 -28.73558,-15.50481zM27.70192,52.92308c-2.63581,0 -5.11658,2.06731 -5.78846,5.375l-20.67308,105.01923c-0.67188,4.6256 1.39544,8.68269 5.375,8.68269h158.76923c3.97957,0 6.04688,-4.05709 5.375,-8.68269l-20.67308,-105.01923c-0.67187,-3.30769 -3.15264,-5.375 -5.78846,-5.375zM56.23077,59.53846c5.29747,0 9.92308,4.6256 9.92308,9.92308c0,5.29747 -4.6256,9.92308 -9.92308,9.92308c-5.29747,0 -9.92308,-4.6256 -9.92308,-9.92308c0,-5.29747 4.6256,-9.92308 9.92308,-9.92308zM115.76923,59.53846c5.29747,0 9.92308,4.6256 9.92308,9.92308c0,5.29747 -4.6256,9.92308 -9.92308,9.92308c-5.29747,0 -9.92308,-4.6256 -9.92308,-9.92308c0,-5.29747 4.6256,-9.92308 9.92308,-9.92308z"></path></g></g></svg>
+<span class="nav-item-text"  onClick="changeFunc(5)">
+              Shopping
+            </span>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="52" height="52"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M86,10.32c-0.52406,0 -1.02125,0.08063 -1.505,0.3225l-82.56,41.28c-1.69312,0.84656 -2.45906,2.92938 -1.6125,4.6225c0.84656,1.69313 2.91594,2.45906 4.6225,1.6125l81.055,-40.5275l81.055,40.5275c0.49719,0.24188 0.99438,0.3225 1.505,0.3225c1.26313,0 2.51281,-0.72562 3.1175,-1.935c0.84656,-1.69312 0.08063,-3.77594 -1.6125,-4.6225l-82.56,-41.28c-0.48375,-0.24187 -0.98094,-0.3225 -1.505,-0.3225zM48.16,55.1475c-25.78656,0 -39.31812,10.30656 -39.8825,10.75c-0.81969,0.63156 -1.29,1.54531 -1.29,2.58v72.5625h-0.1075v1.8275c0.69875,-0.52406 1.1825,-0.91375 1.3975,-1.075c1.27656,-1.02125 14.53938,-10.965 39.8825,-10.965c16.77,0 28.28594,4.38063 34.5075,7.6325v-75.7875c-6.20812,-3.17125 -17.72406,-7.525 -34.5075,-7.525zM123.84,55.1475c-16.78344,0 -28.29937,4.35375 -34.5075,7.525v75.7875c6.22156,-3.25187 17.7375,-7.6325 34.5075,-7.6325c26.1225,0 39.43906,10.61563 39.99,11.0725c0.34938,0.26875 0.72563,0.51063 1.1825,0.86v-74.2825c0,-1.03469 -0.47031,-1.94844 -1.29,-2.58c-0.56437,-0.44344 -14.09594,-10.75 -39.8825,-10.75zM48.16,137.4925c-23.55594,0 -35.56906,9.47344 -35.69,9.5675c0,0 -3.41312,2.59344 -5.59,4.4075v3.3325c0,1.90813 1.54531,3.44 3.44,3.44h60.0925c2.05594,2.59344 6.79938,6.88 15.5875,6.88c8.78813,0 13.53156,-4.28656 15.5875,-6.88h60.0925c1.90813,0 3.44,-1.53187 3.44,-3.44v-3.3325c-1.8275,-1.47812 -3.87,-2.99656 -5.4825,-4.1925c-0.09406,-0.06719 -0.13437,-0.24187 -0.215,-0.3225c-1.51844,-1.12875 -13.51812,-9.46 -35.5825,-9.46c-23.55594,0 -35.56906,9.47344 -35.69,9.5675c-0.06719,0.05375 -0.14781,0.06719 -0.215,0.1075c-0.16125,0.1075 -0.36281,0.24188 -0.5375,0.3225c-0.05375,0.02688 -0.05375,0.08063 -0.1075,0.1075c-0.38969,0.16125 -0.76594,0.20156 -1.1825,0.215c-0.02687,0 -0.08062,0 -0.1075,0c-0.45687,0 -0.87344,-0.13437 -1.29,-0.3225c-0.04031,-0.01344 -0.17469,0.02688 -0.215,0c-0.16125,-0.06719 -0.18812,-0.12094 -0.3225,-0.215c-0.08062,-0.05375 -0.24187,-0.14781 -0.3225,-0.215c-0.1075,-0.08062 -12.13406,-9.5675 -35.69,-9.5675z"></path></g></g></svg>
+            <span class="nav-item-text"  onClick="changeFunc(8)">
+              Schools
+            </span>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="52" height="52"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M133.67728,78.42849l-88.01562,-43.62019c-2.66166,-1.34375 -5.84015,-1.21454 -8.39844,0.33594c-2.55829,1.52464 -4.08294,4.26382 -4.08294,7.20974v87.31791c0,2.92007 1.52464,5.65925 4.08294,7.18389c1.39543,0.85276 2.94591,1.26622 4.52223,1.26622c1.34375,0 2.66166,-0.3101 3.87621,-0.90444l88.04147,-43.67188c2.89423,-1.42128 4.72896,-4.34135 4.72896,-7.54567c0,-3.20433 -1.86058,-6.1244 -4.75481,-7.57151z"></path></g></g></svg>
+            <span class="nav-item-text"  onClick="changeFunc(9)">
+              Entertainment
+            </span>
+          </li>
+          <li class="nav-item">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="52" height="52"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M161.68,37.84h-72.24v-3.44c0,-5.68406 -4.63594,-10.32 -10.32,-10.32h-68.8c-5.68406,0 -10.32,4.63594 -10.32,10.32v110.08c0,5.68406 4.63594,10.32 10.32,10.32h20.64v-10.32h13.76v10.32h82.56v-10.32h13.76v10.32h20.64c5.68406,0 10.32,-4.63594 10.32,-10.32v-96.32c0,-5.68406 -4.63594,-10.32 -10.32,-10.32zM20.64,116.96c0.71219,-12.30875 17.14625,-10.52156 19.43063,-16.90437c0.18812,-2.19031 0.12094,-3.70875 0.12094,-5.71094c-0.95406,-0.51062 -2.72781,-3.81625 -3.01,-6.62469c-0.7525,-0.05375 -1.92156,-0.81969 -2.27094,-3.81625c-0.18813,-1.6125 0.55094,-2.51281 0.99437,-2.795c-2.52625,-10.13187 -1.14219,-18.97375 10.41406,-19.18875c2.88906,0 5.10625,0.80625 5.96625,2.39188c8.43875,1.20937 5.89906,12.99406 4.68969,16.79687c0.44344,0.28219 1.1825,1.19594 0.99438,2.795c-0.33594,3.01 -1.51844,3.7625 -2.27094,3.82969c-0.29562,2.795 -1.98875,6.10063 -2.94281,6.62469c0,1.98875 -0.06719,3.50719 0.12094,5.6975c2.28437,6.38281 18.65125,4.59562 19.36344,16.90437zM151.36,116.96h-61.92v-6.88h61.92zM151.36,99.76h-61.92v-6.88h61.92zM151.36,82.56h-61.92v-6.88h61.92z"></path></g></g></svg>
+            <span class="nav-item-text"  onClick="changeFunc(10)">
+              Contact
+            </span>
+          </li>  
+        </ul>
+    </nav>
+    </div>
+<div class="wrapper">
+ 
+  <div class="collage">
+<div class="item">
+<img class="img-left" src="https://eportfolios.macaulay.cuny.edu/munshisouth10/files/2010/10/CIMG5210.jpg">
+<p><span>1 Forest Park</span> was founded with the goal of providing our customers with classic American baked goods in a warm, friendly atmosphere. By baking all our products on-site, we fill our stores with the delicious smells of fresh cakes and pies to bring back that delightful, warm feeling every time of the year. Each day, we bake everything from scratch using the finest ingredients.</div>
+<div class="item">
+<img src="https://www.bucketlist127.com/uploads/images/bbe7a163aa17545c684238b00b4a2cf4.jpg" >
+<p><span>2 Flushing Meadows Corona Park</span> Improving Lives Through Exercise. Our sports clubs have been the northeast's leader in health and fitness since 1974. Operating more than 100 clubs featuring certified trainers, innovative programs and cutting-edge equipment, we make getting fit a simple exercise.</div>
+<div class="item">
+<img class="img-left" src="https://lh5.googleusercontent.com/p/AF1QipNh3qxSTrEBg8Hq3CiN7X_5QYl2TA-Ykj6ixPBc=w408-h306-k-no" >
+<p><span>3 Meadow Lake</span> is a shopping mall bordered by Long Island Expressway, Junction Boulevard, Queens Boulevard, 63rd Drive, and 99th Street in the Rego Park neighborhood of Queens, New York.</p>
+</div>
+<div class="item">
+<img src="https://lh5.googleusercontent.com/p/AF1QipN113x_DgfDXTuTIf2Fc5BqnJQEeaEVG5O2RlfY=w408-h271-k-no">
+<p><span>4 Forest Park Carousel Amusement Village</span> is an urban shopping mall in Elmhurst, Queens, New York. Just northwest of the larger Queens Center, it is located on Queens Boulevard between 55th and 56th Avenues. The building was constructed in 1965 as Macy's and was designed by Skidmore, Owings & Merrill. It was later converted to Stern's, due to Macy's of Elmhurst moving into Queens Center, as part of Macy's dissolving of Abraham & Straus, in 1994, and then, as a result of Macy's dissolving Stern's in 2001, closed by Federated Department Stores. Today its flagship stores are Best Buy, DSW, Inc., and Target, and it contains many smaller stores such as Red Lobster, Dunkin Donuts, and Mrs. Fields' Cookies.</p>
+</div>
+</div>
+<div onload= "mymap('restaurant.html')" id="googleMap"></div>
+<div id="pano"></div> 
+</div>
+<footer>
+<div class="footer-contact">
+  <a><img src="https://img.icons8.com/ios-filled/100/000000/github.png"/></a>
+  <a><img src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"/></a>
+  <a><img src="https://img.icons8.com/ios-filled/100/000000/email-sign.png"/></a>
+</div>
+  <div id = "footer-content">
+    <p>&copy;2020 Hector Rodriguez</p>
+    <a href="index.html" target="_top">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="100" height="100"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,3.49375l-36.77844,35.31375c-0.90031,0.84656 -1.27656,2.10969 -0.98094,3.30563c0.29562,1.19594 1.20937,2.15 2.39187,2.48594c1.19594,0.34937 2.4725,0.02687 3.34594,-0.84656l28.58156,-27.42594v148.79344c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-148.79344l28.58156,27.42594c0.87344,0.87344 2.15,1.19594 3.34594,0.84656c1.1825,-0.33594 2.09625,-1.29 2.39188,-2.48594c0.29562,-1.19594 -0.08063,-2.45906 -0.98094,-3.30563z"></path></g></g></svg>
+</a>
+</div>
+</footer>
+</div>
+<center><a href="https://www.freepik.com/free-photos-vectors/watercolor">Watercolor vector created by macrovector & Sketchepedia - www.freepik.com</a></center>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyHVINBxWY_2KCMTYVQKSIwEXcF5_oqOo&callback=myMap"></script> 
+</body>
+</html>
